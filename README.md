@@ -1,5 +1,7 @@
-This is the starter Repo for a site I'll be building live over the next several weeks
+Sass Bites Demo Repo
 =============
+###This is the starter Repo for a site I'll be building live over the next several weeks
+
 
 Install Node from http://nodejs.org/
 

@@ -1,0 +1,9 @@
+@import "compass";
+
+$var: blue;
+
+div {
+  color: white;
+  background: $var;
+  @include rotate(-2deg);
+}

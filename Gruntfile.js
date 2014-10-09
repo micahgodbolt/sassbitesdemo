@@ -12,16 +12,49 @@ module.exports = function (grunt) {
         files: ['sass/{,**/}*.scss'],
         tasks: ['compass:dev']
       },
+      includes: {
+        files: ['include/**/*', 'index.html'],
+        tasks: ['includes']
+      },
       livereload: {
         options: {
           livereload: 1337
         },
         files: [
-          'css/style.css',
+          'build/css/style.css',
+          'build/*.html',
           'js/*.js',
           'images/{,**/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
+    },
+
+    // Grunt connect
+    // https://github.com/gruntjs/grunt-contrib-connect
+    connect: {
+      server: {
+       options: {
+        livereload: 1337,
+        port: 9001,
+        base: 'build/',
+        open: {
+          target: 'http://localhost:9001/',
+        }
+       }
+     }
+    },
+
+    // Grunt Includes
+    // https://www.npmjs.org/package/grunt-includes
+    includes: {
+      files: {
+       src: ['*.html'], // Source files
+       dest: 'build', // Destination directory
+       cwd: '.',
+       options: {
+        includePath: 'include'
+       }
+     }
     },
 
     // Grunt Contrib Compass
@@ -29,7 +62,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         sassDir: 'sass',
-        cssDir: 'css'
+        cssDir: 'build/css'
       },
       dev: {
         options: {
@@ -49,9 +82,13 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-includes');
 
   grunt.registerTask('default', [
     'compass:dev',
+    'includes',
+    'connect',
     'watch'
   ]);
 

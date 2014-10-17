@@ -1,0 +1,26 @@
+# Directory to parse
+source: ../sass/
+
+# Directory to build the styleguide
+destination: ../build/styleguide
+
+# Hologram theme
+documentation_assets: ../lib/Cortana
+custom_markdown: ../lib/Cortana/CortanaMarkdownRenderer.rb
+
+dependencies:
+
+
+# To have a custom index page build with your README.md
+index: README
+
+# List all css to include for the styleguide render examples (path from styleguide directory)
+css_include:
+  - ../css/style.css
+
+# List all js to include for the styleguide render examples (path from styleguide directory)
+js_include:
+  - 'http://code.jquery.com/jquery-1.10.2.min.js'
+
+# String who is used to split the category name and create category wrapper
+name_scope: ' - '

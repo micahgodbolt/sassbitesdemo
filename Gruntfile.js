@@ -62,7 +62,8 @@ module.exports = function (grunt) {
     compass: {
       options: {
         sassDir: 'sass',
-        cssDir: 'build/css'
+        cssDir: 'build/css',
+        bundleExec: true,
       },
       dev: {
         options: {
@@ -78,15 +79,44 @@ module.exports = function (grunt) {
       },
     },
 
+    bower: {
+      install: {
+        options: {
+          targetDir: './lib',
+          cleanBowerDir: true,
+        }
+      }
+    },
+
+    shell: {
+      bundler: {
+        command: 'bundle --path lib'
+      }
+    },
+
+    hologram: {
+      generate: {
+        options: {
+          config: './hologram/hologram_config.yml'
+        }
+      }
+    },
+
   });
 
+  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-includes');
+  grunt.loadNpmTasks('grunt-bower-task');
+  grunt.loadNpmTasks('grunt-hologram');
 
   grunt.registerTask('default', [
+    'shell:bundler',
+    'bower',
     'compass:dev',
+    'hologram',
     'includes',
     'connect',
     'watch'

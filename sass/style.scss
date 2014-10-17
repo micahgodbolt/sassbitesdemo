@@ -1,9 +1,24 @@
+ /*doc
+---
+title: Div
+name: Div
+category: Base Div
+---
+
+##My divs are crazy!
+
+```html_example
+<div class="foo">This is my crazy div</div>
+<div class="foo">This one is crazy too</div>
+```
+*/
+
 @import "compass";
 
 $var: pink;
 
-div {
+.foo {
   color: white;
   background: $var;
-  @include rotate(-2deg);
+
 }

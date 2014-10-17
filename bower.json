@@ -1,0 +1,22 @@
+{
+  "name": "sassbitesdemo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/micahgodbolt/sassbitesdemo",
+  "authors": [
+    "Micah Godbolt <mgodbolt@phase2technology.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Cortana": "~1.2.7"
+  },
+  "dependencies": {
+    "eq.js": "~1.4.1"
+  }
+}

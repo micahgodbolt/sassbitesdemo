@@ -1,0 +1,48 @@
+ /*doc
+---
+title: Blog Teaser
+category: Component - Blog Teaser
+---
+
+`data-eq-pts="large:x"` is used to specify when this component breaks from single to two columns
+
+```html_example
+
+<div class="blog-teaser" data-eq-pts="large:500">
+  <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+  <div class="blog-teaser-contents">
+    <header>
+      <h1 class="blog-teaser-title">This is my teaser title</h1>
+      <div class="blog-teaser-author">Micah Godbolt</div>
+      <div class="blog-teaser-date">October 31st, 2014</div>
+    </header>
+    <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    </div>
+  </div>
+</div>
+
+```
+*/
+
+.blog-teaser {
+
+}
+.blog-teaser-img {
+  width: 100%;
+  height: auto;
+}
+.blog-teaser-contents {
+
+}
+.blog-teaser-title {
+
+}
+.blog-teaser-author {
+
+}
+.blog-teaser-date {
+
+}
+.blog-teaser-text {
+
+}

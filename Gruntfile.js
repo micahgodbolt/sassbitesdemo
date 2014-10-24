@@ -88,9 +88,17 @@ module.exports = function (grunt) {
     bower: {
       install: {
         options: {
-          targetDir: './lib',
-          cleanBowerDir: true,
+          targetDir: './lib'
         }
+      }
+    },
+
+    bower_concat: {
+      all: {
+        dest: 'build/js/_bower.js',
+        exclude: [
+          'Cortana',
+        ],
       }
     },
 
@@ -116,11 +124,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-bower-task');
+  grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-hologram');
 
   grunt.registerTask('default', [
     'shell:bundler',
     'bower',
+    'bower_concat',
     'compass:dev',
     'includes',
     'hologram',

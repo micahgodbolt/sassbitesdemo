@@ -1,0 +1,13 @@
+.blog-teaser {
+   @include full();
+}
+.blog-teaser-img {
+  [data-eq-state="large"] &{
+    @include span(3 of 12);
+  }
+}
+.blog-teaser-contents {
+  [data-eq-state="large"] &{
+    @include span(last 9 of 12);
+  }
+}

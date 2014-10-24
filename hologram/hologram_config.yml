@@ -21,6 +21,7 @@ css_include:
 # List all js to include for the styleguide render examples (path from styleguide directory)
 js_include:
   - 'http://code.jquery.com/jquery-1.10.2.min.js'
+  - '../js/_bower.js'
 
 # String who is used to split the category name and create category wrapper
 name_scope: ' - '

@@ -16,6 +16,10 @@ module.exports = function (grunt) {
         files: ['include/**/*', 'index.html'],
         tasks: ['includes']
       },
+      hologram: {
+        files: ['build/css/*'],
+        tasks: ['hologram']
+      },
       livereload: {
         options: {
           livereload: 1337
@@ -23,6 +27,7 @@ module.exports = function (grunt) {
         files: [
           'build/css/style.css',
           'build/*.html',
+          'build/styleguide/*.html',
           'js/*.js',
           'images/{,**/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -64,6 +69,7 @@ module.exports = function (grunt) {
         sassDir: 'sass',
         cssDir: 'build/css',
         bundleExec: true,
+        require: ['sass-globbing', 'susy'],
       },
       dev: {
         options: {
@@ -116,8 +122,8 @@ module.exports = function (grunt) {
     'shell:bundler',
     'bower',
     'compass:dev',
-    'hologram',
     'includes',
+    'hologram',
     'connect',
     'watch'
   ]);

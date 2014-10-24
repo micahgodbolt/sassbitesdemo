@@ -1,24 +1,7 @@
- /*doc
----
-title: Div
-name: Div
-category: Base Div
----
-
-##My divs are crazy!
-
-```html_example
-<div class="foo">This is my crazy div</div>
-<div class="foo">This one is crazy too</div>
-```
-*/
-
 @import "compass";
+@import "susy";
+@import "global/**/*";
+@import "base/**/*";
+@import "components/**/*";
+@import "layout/**/*";
 
-$var: pink;
-
-.foo {
-  color: white;
-  background: $var;
-
-}

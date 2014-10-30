@@ -1,0 +1,21 @@
+.popular-video {
+   @include full();
+   position: relative;
+}
+.popular-video-img {
+  [data-eq-state="large"] &{
+    @include span(3 of 12);
+  }
+}
+.popular-video-contents {
+    position: absolute;
+    bottom: span(1 of 12);
+    left: span(1 of 12);
+    @include span(11 of 12);
+  [data-eq-state="large"] &{
+    @include span(last 9 of 12);
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+}

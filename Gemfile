@@ -3,7 +3,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "sass"
+gem "sass", '3.4.5'
 gem "compass"
 gem "susy"
 gem "breakpoint"

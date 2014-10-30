@@ -1,7 +1,14 @@
 @import "compass";
 @import "susy";
+@import "breakpoint";
 @import "global/**/*";
 @import "base/**/*";
 @import "components/**/*";
 @import "layout/**/*";
 
+.component {
+  background: #ababab;
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+}

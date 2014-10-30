@@ -1,0 +1,49 @@
+ /*doc
+---
+title: Card Layout
+category: Layout - Card
+name: card_layout
+---
+
+```html_example
+
+<div class="card" data-theme="dark">
+  <h1 class="card-title">Optional Card Title</h1>
+  <div class="card-items">
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+  </div>
+</div>
+
+```
+*/
+
+.card {
+  @include clearfix();
+  padding: 1.5em;
+  &[data-theme="dark"]{
+    background: #888;
+  }
+
+}
+
+.card-title {
+  [data-theme="dark"] & {
+    color: white;
+  }
+}
+
+.card-items {
+  > div {
+    margin-bottom: 1.5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

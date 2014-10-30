@@ -1,0 +1,52 @@
+ /*doc
+---
+title: Media Gallery Layout
+category: Layout - Media Gallery
+name: media_gallery_layout
+---
+
+```html_example
+
+<div class="media-gallery" data-layout="4">
+  <h1 class="media-gallery-title">Media Gallery Title</h1>
+  <div class="media-gallery-items">
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+    <div class="component">Component</div>
+  </div>
+</div>
+
+```
+*/
+
+.media-gallery {
+
+}
+
+.media-gallery-title {
+
+}
+
+.media-gallery-items {
+  > div {
+    margin-bottom: gutter();
+    [data-layout="4"] & {
+      @include breakpoint(700px) {
+        @include gallery(4);
+      }
+    }
+    [data-layout="3"] & {
+      @include breakpoint(650px) {
+        @include gallery(6);
+      }
+      @include breakpoint(850px) {
+        @include gallery(3);
+      }
+    }
+  }
+}

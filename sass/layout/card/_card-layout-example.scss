@@ -1,0 +1,66 @@
+ /*doc
+---
+title: Card Layout Examples
+category: Layout - Card
+parent: card_layout
+---
+
+```html_example
+
+<div class="card" data-theme="dark">
+  <h1 class="card-title">Optional Card Title</h1>
+  <div class="card-items">
+  <!-- Popular Video -->
+    <div class="popular-video" data-eq-pts="large:500">
+      <a href="#" class="popular-video-link">
+        <div class="popular-video-img-container">
+          <img class="popular-video-img" src="http://www.placehold.it/400/400">
+        </div>
+        <div class="popular-video-contents">
+          <h1 class="popular-video-title">Video Title</h1>
+          <div class="popular-video-length">5m 40s</div>
+        </div>
+      </a>
+    </div>
+    <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter Signup -->
+    <div class="newsletter-signup" data-eq-pts="large:500">
+
+      <form class="newsletter-signup-form" action="/submit-page" method="post">
+        <header class="newsletter-signup-header">
+          <h2 class="newsletter-signup-title">Sign Up For Our Newsletter</h2>
+          <input class="newsletter-signup-email-field" placeholder="user@domain.com" type="email">
+        </header>
+        <div class="newsletter-signup-form-options">
+          <p class="newsletter-signup-directions">Select the newsletter you'd like to recieve</p>
+          <div class="newsletter-signup-options-group">
+            <input type="checkbox" id="swag" value="swag">
+            <label for="swag">Swag Deals</label>
+          </div>
+          <div class="newsletter-signup-options-group">
+            <input type="checkbox" id="tips" value="tips">
+            <label for="tips">Industry Tips</label>
+          </div>
+          <button class="newsletter-signup-submit" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+```
+*/

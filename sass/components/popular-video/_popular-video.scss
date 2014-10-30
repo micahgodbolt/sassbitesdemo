@@ -1,0 +1,56 @@
+ /*doc
+---
+title: Popular Video
+category: Component - Popular Video
+---
+
+`data-eq-pts="large:x"` is used to specify when this component breaks from single to two columns
+
+```html_example
+
+<div class="popular-video" data-eq-pts="large:500">
+  <a href="#" class="popular-video-link">
+    <div class="popular-video-img-container">
+      <img class="popular-video-img" src="http://www.placehold.it/400/400">
+    </div>
+    <div class="popular-video-contents">
+      <h1 class="popular-video-title">Video Title</h1>
+      <div class="popular-video-length">5m 40s</div>
+    </div>
+  </a>
+</div>
+
+```
+*/
+
+.popular-video {
+
+}
+
+.popular-video-link {
+  display: block;
+}
+
+.popular-video-img-container {
+  .popular-video:not([data-eq-state]) & {
+    .card & {
+      @extend %bleeding-container;
+    }
+  }
+}
+.popular-video-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.popular-video-contents {
+
+}
+.popular-video-title {
+
+}
+.popular-video-length {
+
+}
+
+

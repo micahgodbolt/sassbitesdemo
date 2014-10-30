@@ -69,7 +69,7 @@ module.exports = function (grunt) {
         sassDir: 'sass',
         cssDir: 'build/css',
         bundleExec: true,
-        require: ['sass-globbing', 'susy'],
+        require: ['sass-globbing', 'susy', 'breakpoint'],
       },
       dev: {
         options: {

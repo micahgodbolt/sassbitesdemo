@@ -8,8 +8,10 @@ category: Component - Blog Teaser
 
 ```html_example
 
-<div class="blog-teaser" data-eq-pts="large:500">
-  <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+<div class="blog-teaser" data-eq-pts="large:400">
+  <div class="blog-teaser-img-container">
+    <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+  </div>
   <div class="blog-teaser-contents">
     <header>
       <h1 class="blog-teaser-title">This is my teaser title</h1>
@@ -27,7 +29,16 @@ category: Component - Blog Teaser
 .blog-teaser {
 
 }
+.blog-teaser-img-container {
+  margin-bottom: 1em;
+  .blog-teaser:not([data-eq-state]) & {
+    .card & {
+      @extend %bleeding-container;
+    }
+  }
+}
 .blog-teaser-img {
+  display: block;
   width: 100%;
   height: auto;
 }

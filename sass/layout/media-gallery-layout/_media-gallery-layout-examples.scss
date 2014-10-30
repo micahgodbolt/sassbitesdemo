@@ -1,0 +1,137 @@
+ /*doc
+---
+title: Media Gallery Layout Examples
+category: Layout - Media Gallery
+parent: media_gallery_layout
+---
+
+```html_example
+
+<div class="media-gallery" data-layout="4">
+  <h1 class="media-gallery-title">Media Gallery Title</h1>
+  <div class="media-gallery-items">
+    <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+      <!-- Blog Teaser -->
+    <div class="blog-teaser" data-eq-pts="large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+      </div>
+      <div class="blog-teaser-contents">
+        <header>
+          <h1 class="blog-teaser-title">This is my teaser title</h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 31st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+```
+*/

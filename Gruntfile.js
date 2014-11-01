@@ -96,7 +96,7 @@ module.exports = function (grunt) {
 
     shell: {
       bundler: {
-        command: 'bundle --path lib'
+        command: 'bundle'
       },
       bower: {
         command: 'node_modules/bower/bin/bower install'

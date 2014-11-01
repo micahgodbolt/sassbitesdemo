@@ -85,14 +85,6 @@ module.exports = function (grunt) {
       },
     },
 
-    bower: {
-      install: {
-        options: {
-          targetDir: './lib'
-        }
-      }
-    },
-
     bower_concat: {
       all: {
         dest: 'build/js/_bower.js',
@@ -105,6 +97,9 @@ module.exports = function (grunt) {
     shell: {
       bundler: {
         command: 'bundle --path lib'
+      },
+      bower: {
+        command: 'node_modules/bower/bin/bower install'
       }
     },
 
@@ -123,13 +118,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-includes');
-  grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-hologram');
 
   grunt.registerTask('default', [
     'shell:bundler',
-    'bower',
+    'shell:bower',
     'bower_concat',
     'compass:dev',
     'includes',

@@ -99,7 +99,7 @@ module.exports = function (grunt) {
         command: 'bundle'
       },
       bower: {
-        command: 'node_modules/bower/bin/bower install'
+        command: 'bower install'
       }
     },
 

@@ -37,27 +37,14 @@ parent: card_layout
         </div>
       </div>
     </div>
-    <!-- Newsletter Signup -->
-    <div class="newsletter-signup" data-eq-pts="large:500">
-
-      <form class="newsletter-signup-form" action="/submit-page" method="post">
-        <header class="newsletter-signup-header">
-          <h2 class="newsletter-signup-title">Sign Up For Our Newsletter</h2>
-          <input class="newsletter-signup-email-field" placeholder="user@domain.com" type="email">
-        </header>
-        <div class="newsletter-signup-form-options">
-          <p class="newsletter-signup-directions">Select the newsletter you'd like to recieve</p>
-          <div class="newsletter-signup-options-group">
-            <input type="checkbox" id="swag" value="swag">
-            <label for="swag">Swag Deals</label>
-          </div>
-          <div class="newsletter-signup-options-group">
-            <input type="checkbox" id="tips" value="tips">
-            <label for="tips">Industry Tips</label>
-          </div>
-          <button class="newsletter-signup-submit" type="submit">Sign Up</button>
-        </div>
-      </form>
+    <!-- Quote -->
+    <div class="quote" data-eq-pts="large: 400">
+      <blockquote class="quote-container">
+          <p class="quote-quotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae est eum officia molestias repellendus. Unde nihil, nemo, asperiores illo placeat animi ex nulla. Perferendis similique voluptatum, labore, asperiores aliquid illo.</p>
+          <footer class="quote-reference">
+            <span class="quote-attribution">Michael Pettinicchio</span>, systems administrator, Dartmouth College
+          </footer>
+      </blockquote>
     </div>
   </div>
 </div>

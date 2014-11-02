@@ -111,8 +111,29 @@ module.exports = function (grunt) {
       }
     },
 
+    phantomcss: {
+       options: {
+         mismatchTolerance: 0.05,
+         logLevel: 'error',
+         cleanupComparisonImages: true,
+       },
+       sass: {
+         options: {
+           altRunner: true,
+           screenshots: 'phantomcss/baselines',
+           results: 'phantomcss/results',
+           viewportSize: [1280, 800],
+         },
+         src: [
+            './sass/**/*.js'
+         ]
+       },
+     },
+
   });
 
+
+  grunt.loadNpmTasks('grunt-phantomcss');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');

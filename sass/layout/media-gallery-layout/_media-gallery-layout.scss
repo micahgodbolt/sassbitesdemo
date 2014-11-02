@@ -25,7 +25,7 @@ name: media_gallery_layout
 */
 
 .media-gallery {
-
+  @include clearfix;
 }
 
 .media-gallery-title {

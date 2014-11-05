@@ -63,7 +63,7 @@ module.exports = function (grunt) {
         port: 9001,
         base: 'build/',
         open: {
-          target: 'http://localhost:9001/styleguide',
+          target: 'http://localhost:9001/styleguide/',
         }
        }
      }

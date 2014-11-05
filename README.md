@@ -11,7 +11,7 @@ Install Node from http://nodejs.org/
 
 `gem install bundler`
 
-`git clone git@github.com:micahgodbolt/sassbitesdemo.git`
+`git clone https://github.com/micahgodbolt/sassbitesdemo.git`
 
 `npm install`
 

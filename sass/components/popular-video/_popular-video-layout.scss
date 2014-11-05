@@ -1,5 +1,6 @@
 .popular-video {
    position: relative;
+   @include clearfix;
 }
 .popular-video-img-container {
   [data-eq-state="large"] &{

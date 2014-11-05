@@ -6,6 +6,10 @@ category: Component - Blog Teaser
 
 `data-eq-pts="large:x"` is used to specify when this component breaks from single to two columns
 
+`.card` Context comes from the [Card](/styleguide/layout_-_card.html) layout, and refers to negative margin to stretch image across entire card.
+
+`data-theme="dark"` is an optional `.card` attribute that signifies a dark background, and suggests lighter text.
+
 ```html_example
 
 <div class="blog-teaser" data-eq-pts="small: 0, large:400">

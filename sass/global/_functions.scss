@@ -1,0 +1,37 @@
+/*doc
+---
+title: color
+category: Global - Function
+---
+@function color($name, $opacity: 1, $lighten, $darken)
+
+-   __$name:__ name of color to pull from color map
+-   __$opacity:__ optional opacity value. If default is used rgba() will return the hex value
+-   __$lighten:__ pass in a percentage value to this parameter to lighten outputed value
+-   __$darken:__ pass in a percentage value to this parameter to darken outputed value
+
+````
+.class-name {
+    color: color(brand-primary, .7, $lighten: 10%);
+}
+````
+*/
+
+@function color($name, $opacity: 1, $lighten: 0, $darken: 0) {
+    $color: map-get($colors, $name);
+    @if $color != null {
+        @if $darken > 0 {
+            @return darken($color, $darken);
+        }
+        @elseif $lighten > 0 {
+            @return lighten($color, $lighten);
+        }
+        @else {
+            @return rgba($color, $opacity);
+        }
+    }
+    @else {
+        @warn "#{$name} is not a valid color";
+        @return "black";
+    }
+}

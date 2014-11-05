@@ -5,44 +5,22 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // Watch for changes and trigger compass and livereload
-    // https://github.com/gruntjs/grunt-contrib-watch
-    watch: {
-      compass: {
-        files: ['sass/{,**/}*.scss'],
-        tasks: ['compass:dev']
+    shell: {
+      bundler: {
+        command: 'bundle'
       },
-      hologram: {
-        files: ['build/css/*'],
-        tasks: ['hologram']
-      },
-      livereload: {
-        options: {
-          livereload: 1337
-        },
-        files: [
-          'build/css/style.css',
-          'build/*.html',
-          'build/styleguide/*.html',
-          'js/*.js',
-          'images/{,**/}*.{png,jpg,jpeg,gif,webp,svg}'
-        ]
+      bower: {
+        command: 'bower install'
       }
     },
 
-    // Grunt connect
-    // https://github.com/gruntjs/grunt-contrib-connect
-    connect: {
-      server: {
-       options: {
-        livereload: 1337,
-        port: 9001,
-        base: 'build/',
-        open: {
-          target: 'http://localhost:9001/styleguide',
-        }
-       }
-     }
+    bower_concat: {
+      all: {
+        dest: 'build/js/_bower.js',
+        exclude: [
+          'Cortana',
+        ],
+      }
     },
 
     // Grunt Contrib Compass
@@ -68,29 +46,47 @@ module.exports = function (grunt) {
       },
     },
 
-    bower_concat: {
-      all: {
-        dest: 'build/js/_bower.js',
-        exclude: [
-          'Cortana',
-        ],
-      }
-    },
-
-    shell: {
-      bundler: {
-        command: 'bundle'
-      },
-      bower: {
-        command: 'bower install'
-      }
-    },
-
     hologram: {
       generate: {
         options: {
           config: './hologram/hologram_config.yml'
         }
+      }
+    },
+
+    // Grunt connect
+    // https://github.com/gruntjs/grunt-contrib-connect
+    connect: {
+      server: {
+       options: {
+        livereload: 1337,
+        port: 9001,
+        base: 'build/',
+        open: {
+          target: 'http://localhost:9001/styleguide',
+        }
+       }
+     }
+    },
+
+    // Watch for changes and trigger compass and livereload
+    // https://github.com/gruntjs/grunt-contrib-watch
+    watch: {
+      compass: {
+        files: ['sass/**/*'],
+        tasks: ['compass:dev']
+      },
+      hologram: {
+        files: ['sass/**/*'],
+        tasks: ['hologram']
+      },
+      livereload: {
+        options: {
+          livereload: 1337
+        },
+        files: [
+          'build/styleguide/*.html',
+        ]
       }
     },
 

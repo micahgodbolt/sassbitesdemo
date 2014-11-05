@@ -1,0 +1,47 @@
+ /*doc
+---
+title: Sidebar Layout
+category: Layout - Sidebar
+name: sidebar_layout
+---
+
+An 8/4 layout using a section tag for the 8 column and aside tag for the 4 column. `data-layout="left"` will place the section on the left. `right` will put it after the aside.
+
+```html_example
+<div class="sidebar-layout" data-layout="right">
+  <div class="sidebar-layout-items">
+    <section class="component">Section</section>
+    <aside class="component">Aside</aside>
+  </div>
+</div>
+
+```
+*/
+
+.sidebar-layout {
+  @include clearfix;
+}
+
+.sidebar-layout-items {
+  > section {
+    @include breakpoint(map-get($breakpoints, medium)) {
+      [data-layout="left"] > & {
+        @include span(8 of 12);
+      }
+      [data-layout="right"] > & {
+        @include span(last 8 of 12);
+      }
+    }
+  }
+  > aside {
+    @include breakpoint(map-get($breakpoints, medium)) {
+      [data-layout="left"] > & {
+        @include span(last 4 of 12);
+      }
+      [data-layout="right"] > & {
+        @include span(4 of 12);
+      }
+    }
+  }
+}
+

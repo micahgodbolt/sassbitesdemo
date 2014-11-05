@@ -12,10 +12,6 @@ module.exports = function (grunt) {
         files: ['sass/{,**/}*.scss'],
         tasks: ['compass:dev']
       },
-      includes: {
-        files: ['include/**/*', 'index.html'],
-        tasks: ['includes']
-      },
       hologram: {
         files: ['build/css/*'],
         tasks: ['hologram']
@@ -43,21 +39,8 @@ module.exports = function (grunt) {
         port: 9001,
         base: 'build/',
         open: {
-          target: 'http://localhost:9001/',
+          target: 'http://localhost:9001/styleguide',
         }
-       }
-     }
-    },
-
-    // Grunt Includes
-    // https://www.npmjs.org/package/grunt-includes
-    includes: {
-      files: {
-       src: ['*.html'], // Source files
-       dest: 'build', // Destination directory
-       cwd: '.',
-       options: {
-        includePath: 'include'
        }
      }
     },
@@ -147,7 +130,6 @@ module.exports = function (grunt) {
     'shell:bower',
     'bower_concat',
     'compass:dev',
-    'includes',
     'hologram',
     'connect',
     'watch'

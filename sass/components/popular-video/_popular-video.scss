@@ -8,10 +8,10 @@ category: Component - Popular Video
 
 ```html_example
 
-<div class="popular-video" data-eq-pts="large:500">
+<div class="popular-video" data-eq-pts="small: 0, large:500">
   <a href="#" class="popular-video-link">
     <div class="popular-video-img-container">
-      <img class="popular-video-img" src="http://www.placehold.it/400/400">
+      <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
     </div>
     <div class="popular-video-contents">
       <h1 class="popular-video-title">Video Title</h1>
@@ -32,25 +32,28 @@ category: Component - Popular Video
 }
 
 .popular-video-img-container {
-  .popular-video:not([data-eq-state]) & {
-    .card & {
-      @extend %bleeding-container;
-    }
+  @extend %video-overlay;
+  .card [data-eq-state = "small"] & {
+    @extend %bleeding-container;
   }
 }
 .popular-video-img {
-  display: block;
-  width: 100%;
-  height: auto;
+  @extend %responsive-image;
 }
 .popular-video-contents {
 
 }
 .popular-video-title {
-
+  @extend %secondary-title;
+  [data-eq-state = "small"] & {
+    color: color(white);
+  }
 }
 .popular-video-length {
-
+  @extend %small-copy;
+  [data-eq-state = "small"] & {
+    color: color(white);
+  }
 }
 
 

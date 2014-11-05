@@ -10,11 +10,11 @@ category: Component - Blog Teaser
 
 <div class="blog-teaser" data-eq-pts="small: 0, large:400">
   <div class="blog-teaser-img-container">
-    <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+    <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
   </div>
   <div class="blog-teaser-contents">
-    <header>
-      <h1 class="blog-teaser-title">This is my teaser title</h1>
+    <header class="blog-teaser-header">
+      <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
       <div class="blog-teaser-author">Micah Godbolt</div>
       <div class="blog-teaser-date">October 31st, 2014</div>
     </header>
@@ -31,29 +31,34 @@ category: Component - Blog Teaser
 }
 .blog-teaser-img-container {
   margin-bottom: 1em;
-  .blog-teaser:not([data-eq-state]) & {
-    .card & {
-      @extend %bleeding-container;
-    }
+  .card [data-eq-state="small"] & {
+    @extend %bleeding-container;
   }
 }
 .blog-teaser-img {
-  display: block;
-  width: 100%;
-  height: auto;
+  @extend %responsive-image;
 }
 .blog-teaser-contents {
 
 }
-.blog-teaser-title {
 
+.blog-teaser-header {
+  margin-bottom: 1em;
 }
-.blog-teaser-author {
+.blog-teaser-title {
+  @extend %primary-title;
+}
+.blog-teaser-link {
+}
 
+.blog-teaser-author {
+  @extend %name-copy;
 }
 .blog-teaser-date {
-
+  @extend %small-copy;
 }
 .blog-teaser-text {
-
+  [data-theme="dark"] & {
+    color: color(white);
+  }
 }

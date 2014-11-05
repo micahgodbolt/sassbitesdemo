@@ -1,7 +1,7 @@
 .blog-teaser {
    @include full();
 }
-.blog-teaser-img {
+.blog-teaser-img-container {
   [data-eq-state="large"] & {
     @include span(3 of 12);
   }

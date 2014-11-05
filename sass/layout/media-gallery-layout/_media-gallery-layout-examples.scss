@@ -8,16 +8,16 @@ parent: media_gallery_layout
 ```html_example
 
 <div class="media-gallery" data-layout="4">
-  <h1 class="media-gallery-title">Media Gallery Title</h1>
+  <h1 class="media-gallery-title">A Big List of Cats</h1>
   <div class="media-gallery-items">
     <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -26,13 +26,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -41,13 +41,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -56,13 +56,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -71,13 +71,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -86,13 +86,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -101,13 +101,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -116,13 +116,13 @@ parent: media_gallery_layout
       </div>
     </div>
       <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>

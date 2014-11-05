@@ -1,3 +1,19 @@
-h1,h2,h3,h4,h5,h6,p,ul,li {
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+  @include print-property-map($base-font);
+}
+
+a {
+  color: color(primary);
+  &:hover {
+    color: color(secondary);
+  }
+}
+
+* {
   margin-top: 0;
 }
+

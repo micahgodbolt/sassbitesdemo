@@ -29,7 +29,7 @@ name: media_gallery_layout
 }
 
 .media-gallery-title {
-
+  @extend %secondary-title;
 }
 
 .media-gallery-items {

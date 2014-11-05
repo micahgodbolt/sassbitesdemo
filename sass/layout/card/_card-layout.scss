@@ -28,15 +28,13 @@ name: card_layout
   @include clearfix();
   padding: 1.5em;
   &[data-theme="dark"]{
-    background: #888;
+    background: color(black);
   }
 
 }
 
 .card-title {
-  [data-theme="dark"] & {
-    color: white;
-  }
+  @extend %secondary-title;
 }
 
 .card-items {

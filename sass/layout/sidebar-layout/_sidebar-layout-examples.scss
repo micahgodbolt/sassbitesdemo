@@ -1,0 +1,161 @@
+ /*doc
+---
+title: Sidebar Layout Examples
+category: Layout - Sidebar
+parent: sidebar_layout
+---
+
+```html_example
+
+<div class="sidebar-layout" data-layout="left">
+  <div class="sidebar-layout-items">
+    <section>
+      <div class="media-gallery" data-layout="4">
+        <h1 class="media-gallery-title">Media Gallery </h1>
+        <div class="media-gallery-items">
+          <!-- Popular Video -->
+          <div class="popular-video" data-eq-pts="small: 0, large:500">
+            <a href="#" class="popular-video-link">
+              <div class="popular-video-img-container">
+                <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+              </div>
+              <div class="popular-video-contents">
+                <h1 class="popular-video-title">Video Title</h1>
+                <div class="popular-video-length">5m 40s</div>
+              </div>
+            </a>
+          </div>
+          <!-- Popular Video -->
+          <div class="popular-video" data-eq-pts="small: 0, large:500">
+            <a href="#" class="popular-video-link">
+              <div class="popular-video-img-container">
+                <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+              </div>
+              <div class="popular-video-contents">
+                <h1 class="popular-video-title">Video Title</h1>
+                <div class="popular-video-length">5m 40s</div>
+              </div>
+            </a>
+          </div>
+          <!-- Popular Video -->
+          <div class="popular-video" data-eq-pts="small: 0, large:500">
+            <a href="#" class="popular-video-link">
+              <div class="popular-video-img-container">
+                <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+              </div>
+              <div class="popular-video-contents">
+                <h1 class="popular-video-title">Video Title</h1>
+                <div class="popular-video-length">5m 40s</div>
+              </div>
+            </a>
+          </div>
+          <!-- Popular Video -->
+          <div class="popular-video" data-eq-pts="small: 0, large:500">
+            <a href="#" class="popular-video-link">
+              <div class="popular-video-img-container">
+                <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+              </div>
+              <div class="popular-video-contents">
+                <h1 class="popular-video-title">Video Title</h1>
+                <div class="popular-video-length">5m 40s</div>
+              </div>
+            </a>
+          </div>
+          <!-- Popular Video -->
+          <div class="popular-video" data-eq-pts="small: 0, large:500">
+            <a href="#" class="popular-video-link">
+              <div class="popular-video-img-container">
+                <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+              </div>
+              <div class="popular-video-contents">
+                <h1 class="popular-video-title">Video Title</h1>
+                <div class="popular-video-length">5m 40s</div>
+              </div>
+            </a>
+          </div>
+          <!-- Popular Video -->
+          <div class="popular-video" data-eq-pts="small: 0, large:500">
+            <a href="#" class="popular-video-link">
+              <div class="popular-video-img-container">
+                <img class="popular-video-img" src="http://www.placehold.it/400/990099/fff">
+              </div>
+              <div class="popular-video-contents">
+                <h1 class="popular-video-title">Video Title</h1>
+                <div class="popular-video-length">5m 40s</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-theme="dark">
+        <h1 class="card-title">Nine Tails Blog</h1>
+        <div class="card-items">
+          <div class="blog-teaser" data-eq-pts="small: 0, large:400">
+            <div class="blog-teaser-img-container">
+              <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
+            </div>
+            <div class="blog-teaser-contents">
+              <header class="blog-teaser-header">
+                <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
+                <div class="blog-teaser-author">Micah Godbolt</div>
+                <div class="blog-teaser-date">October 31st, 2014</div>
+              </header>
+              <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+            </div>
+          </div>
+          <div class="blog-teaser" data-eq-pts="small: 0, large:400">
+            <div class="blog-teaser-img-container">
+              <img class="blog-teaser-img" src="http://placekitten.com/g/302/200">
+            </div>
+            <div class="blog-teaser-contents">
+              <header class="blog-teaser-header">
+                <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
+                <div class="blog-teaser-author">Micah Godbolt</div>
+                <div class="blog-teaser-date">October 21st, 2014</div>
+              </header>
+              <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="card" data-theme="dark">
+      <h1 class="card-title">Nine Tails Blog</h1>
+      <div class="card-items">
+        <div class="blog-teaser" data-eq-pts="small: 0, large:400">
+          <div class="blog-teaser-img-container">
+            <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
+          </div>
+          <div class="blog-teaser-contents">
+            <header class="blog-teaser-header">
+              <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
+              <div class="blog-teaser-author">Micah Godbolt</div>
+              <div class="blog-teaser-date">October 31st, 2014</div>
+            </header>
+            <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+          </div>
+        </div>
+        <div class="blog-teaser" data-eq-pts="small: 0, large:400">
+          <div class="blog-teaser-img-container">
+            <img class="blog-teaser-img" src="http://placekitten.com/g/302/200">
+          </div>
+          <div class="blog-teaser-contents">
+            <header class="blog-teaser-header">
+              <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
+              <div class="blog-teaser-author">Micah Godbolt</div>
+              <div class="blog-teaser-date">October 21st, 2014</div>
+            </header>
+            <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+```
+*/

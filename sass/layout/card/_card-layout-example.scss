@@ -7,29 +7,44 @@ parent: card_layout
 
 ```html_example
 
-<div class="card" data-theme="dark">
-  <h1 class="card-title">Optional Card Title</h1>
+<div class="card" data-theme="dark" style="width: 45%; float: left">
+  <h1 class="card-title">Nyan Cat</h1>
   <div class="card-items">
   <!-- Popular Video -->
-    <div class="popular-video" data-eq-pts="large:500">
-      <a href="#" class="popular-video-link">
+    <div class="popular-video" data-eq-pts="small: 0, large:500">
+      <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" class="popular-video-link">
         <div class="popular-video-img-container">
-          <img class="popular-video-img" src="http://www.placehold.it/400/400">
+          <img class="popular-video-img" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Nyan_cat_250px_frame.PNG/220px-Nyan_cat_250px_frame.PNG">
         </div>
         <div class="popular-video-contents">
-          <h1 class="popular-video-title">Video Title</h1>
-          <div class="popular-video-length">5m 40s</div>
+          <h1 class="popular-video-title">Nyanyanyanyanyanyanya</h1>
+          <div class="popular-video-length">3m 36s</div>
         </div>
       </a>
     </div>
-    <!-- Blog Teaser -->
-    <div class="blog-teaser" data-eq-pts="large:400">
+    <!-- Quote -->
+    <div class="quote" data-eq-pts="small: 0, large: 400">
+      <blockquote class="quote-container">
+          <p class="quote-quotation">Nyan Cat is the name of a YouTube video, uploaded in April 2011, which became an Internet meme. The video merged a Japanese pop song with an animated cartoon cat with the body of a Pop-Tart, flying through space, and leaving a rainbow trail behind it. The video ranked at number 5 on the list of most viewed YouTube videos in 2011.[1]</p>
+          <footer class="quote-reference">
+          <div class="quote-attribution">From Wikipedia,</div>
+          <div class="quote-job-title">the free encyclopedia</div>
+          </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-theme="dark" style="width: 45%; float: right">
+  <h1 class="card-title">Nine Tails Blog</h1>
+  <div class="card-items">
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
       <div class="blog-teaser-img-container">
-        <img class="blog-teaser-img" src="http://www.placehold.it/400/400">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/300/200">
       </div>
       <div class="blog-teaser-contents">
-        <header>
-          <h1 class="blog-teaser-title">This is my teaser title</h1>
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
           <div class="blog-teaser-author">Micah Godbolt</div>
           <div class="blog-teaser-date">October 31st, 2014</div>
         </header>
@@ -37,14 +52,19 @@ parent: card_layout
         </div>
       </div>
     </div>
-    <!-- Quote -->
-    <div class="quote" data-eq-pts="large: 400">
-      <blockquote class="quote-container">
-          <p class="quote-quotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae est eum officia molestias repellendus. Unde nihil, nemo, asperiores illo placeat animi ex nulla. Perferendis similique voluptatum, labore, asperiores aliquid illo.</p>
-          <footer class="quote-reference">
-            <span class="quote-attribution">Michael Pettinicchio</span>, systems administrator, Dartmouth College
-          </footer>
-      </blockquote>
+    <div class="blog-teaser" data-eq-pts="small: 0, large:400">
+      <div class="blog-teaser-img-container">
+        <img class="blog-teaser-img" src="http://placekitten.com/g/302/200">
+      </div>
+      <div class="blog-teaser-contents">
+        <header class="blog-teaser-header">
+          <h1 class="blog-teaser-title"><a href="" class="blog-teaser-link"> This is my teaser title</a></h1>
+          <div class="blog-teaser-author">Micah Godbolt</div>
+          <div class="blog-teaser-date">October 21st, 2014</div>
+        </header>
+        <div class="blog-teaser-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+      </div>
     </div>
   </div>
 </div>

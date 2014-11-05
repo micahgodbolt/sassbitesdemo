@@ -1,0 +1,65 @@
+/*doc
+---
+title: Bleeding Container
+category: Extends - Box
+---
+
+When inside of a card, often you'll want the image/video assets to bleed to the edges of the [card layout](http://localhost:9001/styleguide/layout_-_card.html). This extend can be applied to image/video containers to add negative margin equal to the padding of a card.
+
+
+````html_example
+<div class="card" data-theme="dark" style="width: 300px">
+  <div class="card-title">Non Bleeding Card Title</div>
+  <div class="bleeding-container">
+    <img src="http://placekitten.com/g/300/200">
+  </div>
+</div>
+````
+*/
+
+%bleeding-container, .bleeding-container {
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+}
+
+/*doc
+---
+title: Responsive Image
+category: Extends - Box
+---
+
+
+````html_example
+<div style="width: 350px; float: left;">
+<p>With Responsive Image</p>
+  <div style="border: 1px solid #888">
+    <img class="responsive-image" src="http://placekitten.com/g/300/200">
+  </div>
+</div>
+
+<div style="width: 350px; float: right;">
+<p>Without Responsive Image</p>
+  <div style="border: 1px solid #888">
+    <img src="http://placekitten.com/g/300/200">
+  </div>
+</div>
+````
+*/
+
+%responsive-image, .responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+%video-overlay, .video-overlay {
+  position: relative;
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('http://dclottery.com/img/play-button-overlay.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: absolute;
+  }
+}

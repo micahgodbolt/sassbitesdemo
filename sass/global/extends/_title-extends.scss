@@ -1,0 +1,34 @@
+%primary-title, .primary-title {
+    font-family: map-get($font-families, serif);
+    font-size: 1.7em;
+    margin-bottom: .5em;
+    font-weight: 400;
+    color: color(secondary);
+    line-height: 1.1;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+%secondary-title, .secondary-title {
+    font-size: 1.3em;
+    margin-bottom: .9em;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.4;
+    color: color(black);
+    [data-theme="dark"] & {
+        color: white;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

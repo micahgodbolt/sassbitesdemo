@@ -1,0 +1,52 @@
+/*doc
+---
+title: Colors
+category: Global - Variables
+---
+|Variable Name | Hex Value | Swatch | Example
+|---------|-------|------|----|
+|primary | #990099| <div style="background: #990099; height: 30px; width: 200px;"></div> | <div style="color: #990099"> Example </div> |
+|secondary | #557799| <div style="background: #557799; height: 30px"></div> | <div style="color: #557799"> Example </div> |
+|tertiary | #D20040| <div style="background: #D20040; height: 30px"></div> | <div style="color: #D20040"> Example </div> |
+|black | #252527| <div style="background: #252527; height: 30px"></div> | <div style="color: #252527"> Example </div> |
+|white | #fff| <div style="background: #fff; height: 30px"></div> | <div style="color: #fff"> Example </div> |
+|grey | #555566| <div style="background: #555566; height: 30px"></div> | <div style="color: #555566"> Example </div> |
+
+*/
+
+$colors: (
+  primary: #990099,
+  secondary: #557799,
+  black: #252527,
+  white: #fff,
+  grey: #555566,
+  );
+
+$font-families: (
+  serif: (Georgia, "Times New Roman", Times, serif),
+  sans-serif: (Helvetica Neue, Helvetica, Arial, sans-serif)
+  );
+
+$base-font: (
+  font-family: map-get($font-families, sans-serif),
+  line-height: 1.3,
+  font-size: 16px,
+  color: map-get($colors, black),
+  font-weight: 400,
+  );
+
+
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  math: fluid,
+  output: float,
+  box-sizing: border-box,
+  gutter-position: after,
+);
+
+$breakpoints: (
+  small: 500px,
+  medium: 850px,
+  large: 1000px,
+  );

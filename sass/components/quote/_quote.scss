@@ -6,11 +6,12 @@ category: Component - Quote
 
 ```html_example
 <!-- Quote -->
-<div class="quote" data-eq-pts="large: 400">
+<div class="quote" data-eq-pts="small: 0, large: 400">
   <blockquote class="quote-container">
       <p class="quote-quotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae est eum officia molestias repellendus. Unde nihil, nemo, asperiores illo placeat animi ex nulla. Perferendis similique voluptatum, labore, asperiores aliquid illo.</p>
       <footer class="quote-reference">
-        <span class="quote-attribution">Michael Pettinicchio</span>, systems administrator, Dartmouth College
+        <div class="quote-attribution">Michael Pettinicchio,</div>
+        <div class="quote-job-title">systems administrator, Dartmouth College</div>
       </footer>
   </blockquote>
 </div>
@@ -24,15 +25,21 @@ category: Component - Quote
 
 }
 .quote-container {
-  //@extend %default-reset; // reset in case blockquote is used
+  margin: 0;
 }
 .quote-quotation {
-  //@extend %quote;
+ @extend %italic-copy;
 }
 .quote-reference {
-  //@extend %quote-footer;
+
 }
 .quote-attribution {
-  font-weight: bold;
+   @extend %name-copy;
+   display: inline-block;
+}
+
+.quote-job-title {
+   @extend %small-copy;
+   display: inline-block;
 }
 

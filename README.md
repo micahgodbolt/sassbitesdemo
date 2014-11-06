@@ -18,7 +18,7 @@ Install Node from http://nodejs.org/
 
 `gem install bundler`
 
-`git clone https://github.com/micahgodbolt/sass-summit-2014.git`
+`git clone https://github.com/micahgodbolt/sass-summit-2014.git & cd sass-summit-2014`
 
 `npm install`
 

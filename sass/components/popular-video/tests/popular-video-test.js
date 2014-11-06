@@ -2,7 +2,12 @@
   The test scenario
 */
 
-casper.thenOpen('http://localhost:9001/styleguide/component_-_popular_video.html')
+casper.thenOpen('http://localhost:9001/build/styleguide/component_-_popular_video.html')
     .then(function () {
-        phantomcss.screenshot('.popular-video', 'popular-video');
+        this.viewport(400, 1000);
+        phantomcss.screenshot('.popular-video', 'popular-video-mobile');
+    })
+    .then(function () {
+        this.viewport(1000, 1000);
+        phantomcss.screenshot('.popular-video', 'popular-video-desktop');
     });

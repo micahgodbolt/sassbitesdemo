@@ -27,21 +27,13 @@ module.exports = function (grunt) {
     // https://github.com/gruntjs/grunt-contrib-compass
     compass: {
       options: {
-        sassDir: 'sass',
-        cssDir: 'build/css',
-        bundleExec: true,
-        require: ['sass-globbing', 'susy', 'breakpoint'],
+       config: 'config.rb',
+       bundleExec: 'true'
       },
       dev: {
         options: {
           environment: 'development',
           outputStyle: 'expanded',
-        }
-      },
-      dist: {
-        options: {
-          environment: 'production',
-          outputStyle: 'compact',
         }
       },
     },
@@ -61,9 +53,9 @@ module.exports = function (grunt) {
        options: {
         livereload: 1337,
         port: 9001,
-        base: 'build/',
+        base: './',
         open: {
-          target: 'http://localhost:9001/styleguide/',
+          target: 'http://localhost:9001/build/styleguide/',
         }
        }
      }

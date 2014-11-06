@@ -1,7 +1,10 @@
-Sass Bites Demo Repo
+Sass Summit 2014
+"Putting it All Together"
+by @MicahGodbolt
 =============
-###This is the starter Repo for a site I'll be building live over the next several weeks
 
+
+##Steps to Install
 
 Install Node from http://nodejs.org/
 
@@ -11,7 +14,7 @@ Install Node from http://nodejs.org/
 
 `gem install bundler`
 
-`git clone https://github.com/micahgodbolt/sassbitesdemo.git`
+`git clone https://github.com/micahgodbolt/sass-summit-2014.git`
 
 `npm install`
 

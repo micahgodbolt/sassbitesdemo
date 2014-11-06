@@ -1,7 +1,5 @@
-__"Putting it All Together"__<br>
-__by @MicahGodbolt__
+#"Putting it All Together"<br>by @MicahGodbolt
 
-<hr>
 
 ## What we'll be going over
 - Build Systems

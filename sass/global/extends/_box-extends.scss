@@ -112,5 +112,9 @@ This overlay places a play button centered over the element via a before pseudo 
     background: url('http://dclottery.com/img/play-button-overlay.png') no-repeat 50% 50%;
     background-size: cover;
     position: absolute;
+    opacity: .5;
+  }
+  &:hover:before {
+    opacity: 1;
   }
 }

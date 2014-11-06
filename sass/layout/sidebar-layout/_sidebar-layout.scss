@@ -17,7 +17,7 @@ An 8/4 layout using a section tag for the 8 column and aside tag for the 4 colum
 */
 
 .sidebar-layout {
-  @include clearfix;
+  @include container;
 }
 
 

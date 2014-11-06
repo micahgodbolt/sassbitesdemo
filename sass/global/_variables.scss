@@ -39,9 +39,14 @@ $base-font: (
 $susy: (
   columns: 12,
   gutters: 1/2,
+  // columns: 1 1 1 1 2 2 2 2 3 3 3 3,
+  // gutters: 2,
   math: fluid,
   output: float,
   gutter-position: after,
+  debug: (
+    //image: show-columns,
+  ),
 );
 
 $breakpoints: (

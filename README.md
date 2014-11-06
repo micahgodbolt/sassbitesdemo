@@ -1,8 +1,8 @@
-Sass Summit 2014
+##Sass Summit 2014
 
-"Putting it All Together"
+###"Putting it All Together"
 
-by @MicahGodbolt
+###by @MicahGodbolt
 
 <hr>
 

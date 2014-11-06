@@ -1,9 +1,9 @@
 {
-  "name": "sassbitesdemo",
-  "version": "0.0.0",
-  "homepage": "https://github.com/micahgodbolt/sassbitesdemo",
+  "name": "Sass Summit 2014",
+  "version": "1.0.0",
+  "homepage": "https://github.com/micahgodbolt/sass-summit-2014",
   "authors": [
-    "Micah Godbolt <mgodbolt@phase2technology.com>"
+    "Micah Godbolt <micahgodbolt@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

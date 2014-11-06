@@ -1,11 +1,14 @@
-##Sass Summit 2014
-
-###"Putting it All Together"
-
-###by @MicahGodbolt
+__"Putting it All Together"__<br>
+__by @MicahGodbolt__
 
 <hr>
 
+## What we'll be going over
+- Build Systems
+- Code Standards
+- Styleguide
+- Step 4
+- Profit!
 
 ##Steps to Install
 
@@ -22,14 +25,6 @@ Install Node from http://nodejs.org/
 `npm install`
 
 `grunt`
-
-
-## What we'll be going over
-- Build Systems
-- Code Standards
-- Styleguide
-- Step 4
-- Profit!
 
 ##Related Links
 [Front-end Architecture Definition](https://github.com/micahgodbolt/front-end-architecture)

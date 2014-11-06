@@ -1,4 +1,4 @@
-#Putting it All Together<br>by [@MicahGodbolt](http://www.twitter.com/micahgodbolt)
+#Putting it All Together<br>by [@MicahGodbolt](http://www.twitter.com/micahgodbolt) - Front-end Architect
 
 
 ### What we'll be going over

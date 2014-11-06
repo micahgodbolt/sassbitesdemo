@@ -5,6 +5,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    // https://github.com/sindresorhus/grunt-shell
     shell: {
       bundler: {
         command: 'bundle'
@@ -14,6 +15,8 @@ module.exports = function (grunt) {
       }
     },
 
+
+    // https://www.npmjs.org/package/grunt-bower-concat
     bower_concat: {
       all: {
         dest: 'build/js/_bower.js',
@@ -38,6 +41,8 @@ module.exports = function (grunt) {
       },
     },
 
+    // http://trulia.github.io/hologram/
+    // https://www.npmjs.org/package/grunt-hologram
     hologram: {
       generate: {
         options: {
@@ -82,6 +87,7 @@ module.exports = function (grunt) {
       }
     },
 
+    // https://github.com/micahgodbolt/grunt-phantomcss/tree/alt-runner
     phantomcss: {
        options: {
          mismatchTolerance: 0.05,

@@ -1,3 +1,16 @@
+/*doc
+---
+title: Primary Title
+category: Extends - Title
+---
+
+Primary Titles that contain anchor tags will style anchor tags with same color as parent, and only show underline upon hover.
+
+````html_example
+<div class="primary-title">This is Primary Title</div>
+````
+*/
+
 %primary-title, .primary-title {
     font-family: map-get($font-families, serif);
     font-size: 1.7em;
@@ -13,6 +26,21 @@
         }
     }
 }
+
+/*doc
+---
+title: Secondary Title
+category: Extends - Title
+---
+
+Secondary Titles that contain anchor tags will style anchor tags with same color as parent, and only show underline upon hover.
+
+Inside of dark theme, this text is white.
+
+````html_example
+<div class="secondary-title">This is Secondary Title</div>
+````
+*/
 
 %secondary-title, .secondary-title {
     font-size: 1.3em;

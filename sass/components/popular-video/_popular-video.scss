@@ -28,7 +28,7 @@ category: Component - Popular Video
 */
 
 .popular-video {
-
+  @extend %eqjs-hide-fout;
 }
 
 .popular-video-link {

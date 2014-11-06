@@ -1,3 +1,17 @@
+/*doc
+---
+title: Italic Copy
+category: Extends - Copy
+---
+
+Inside of dark theme, this text is white.
+
+
+````html_example
+<div class="italic-copy">This is Italic Copy</div>
+````
+*/
+
 %italic-copy, .italic-copy {
   line-height:1.2;
   font-style: italic;
@@ -5,6 +19,21 @@
     color: color(white);
   }
 }
+
+/*doc
+---
+title: Small Copy
+category: Extends - Copy
+---
+
+Inside of dark theme, this text is white.
+
+
+````html_example
+<div class="small-copy">This is Small Copy</div>
+````
+*/
+
 
 %small-copy, .small-copy {
   color: color(grey);
@@ -15,6 +44,20 @@
   line-height: 1.3;
   text-transform: uppercase;
 }
+
+/*doc
+---
+title: Name Copy
+category: Extends - Copy
+---
+
+Name Copy is typically used for people/business names. It's smaller, bold, uppercase, and is usually followed by small copy containing information about that person/business
+
+
+````html_example
+<div class="name-copy">This is Name Copy</div>
+````
+*/
 
 %name-copy, .name-copy {
   color: color(primary);

@@ -22,7 +22,7 @@ category: Component - Quote
 
 
 .quote {
-
+  @extend %eqjs-hide-fout;
 }
 .quote-container {
   margin: 0;

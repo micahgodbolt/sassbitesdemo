@@ -4,14 +4,23 @@ title: Bleeding Container
 category: Extends - Box
 ---
 
+%bleeding-container
+
 When inside of a card, often you'll want the image/video assets to bleed to the edges of the [card layout](http://localhost:9001/styleguide/layout_-_card.html). This extend can be applied to image/video containers to add negative margin equal to the padding of a card.
 
 
 ````html_example
-<div class="card" data-theme="dark" style="width: 300px">
-  <div class="card-title">Non Bleeding Card Title</div>
+<div class="card" data-theme="dark" style="width: 300px; float: left;">
+  <div class="card-title">Card with bleeding image</div>
   <div class="bleeding-container">
-    <img src="http://placekitten.com/g/300/200">
+    <img class="responsive-image" src="http://placekitten.com/g/300/200">
+  </div>
+</div>
+
+<div class="card" data-theme="dark" style="width: 300px; float: right;">
+  <div class="card-title">Card without bleeding image</div>
+  <div>
+    <img class="responsive-image" src="http://placekitten.com/g/300/200">
   </div>
 </div>
 ````
@@ -22,12 +31,15 @@ When inside of a card, often you'll want the image/video assets to bleed to the 
   margin-right: -1.5em;
 }
 
+
+
 /*doc
 ---
 title: Responsive Image
 category: Extends - Box
 ---
 
+%responsive-image
 
 ````html_example
 <div style="width: 350px; float: left;">
@@ -51,6 +63,45 @@ category: Extends - Box
   width: 100%;
   height: auto;
 }
+
+
+/*doc
+---
+title: eqjs-hide-fout
+category: Extends - Box
+---
+
+%eqjs-hide-fout
+
+This extend will hide (visibility:hidden) an element until data-eq-state is applied to it.
+
+*/
+
+%eqjs-hide-fout {
+  visibility: hidden;
+  &[data-eq-state] {
+    visibility: visible;
+  }
+}
+
+
+/*doc
+---
+title: Video Overlay
+category: Extends - Box
+---
+%video-overlay
+
+This overlay places a play button centered over the element via a before pseudo element
+
+```html_example
+<div class="video-overlay" style="float: left">
+  <img class="responsive-image" src="http://placekitten.com/g/300/200">
+</div>
+
+```
+
+*/
 
 %video-overlay, .video-overlay {
   position: relative;

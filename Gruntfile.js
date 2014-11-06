@@ -85,7 +85,7 @@ module.exports = function (grunt) {
           livereload: 1337
         },
         files: [
-          'build/styleguide/*.html',
+          'build/styleguide/**/*',
         ]
       }
     },

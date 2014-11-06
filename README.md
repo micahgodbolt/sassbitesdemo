@@ -1,4 +1,4 @@
-#Putting it All Together<br>by @MicahGodbolt
+#Putting it All Together<br>by [@MicahGodbolt](http://www.twitter.com/micahgodbolt)
 
 
 ### What we'll be going over

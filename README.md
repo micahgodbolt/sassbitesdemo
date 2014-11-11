@@ -29,3 +29,6 @@ Install Node from http://nodejs.org/
 - [Abusing the Cascade](http://www.phase2technology.com/blog/used-and-abused-css-inheritance-and-our-misuse-of-the-cascade/)
 - [@SassBites Podcast](https://www.youtube.com/user/sassbites)
 - [@pdxSass Meetup](http://www.meetup.com/pdxSass/)
+
+###Windows Users
+Check out issue [#4](https://github.com/micahgodbolt/sassbitesdemo/issues/4) for tips on making this work on windows. 

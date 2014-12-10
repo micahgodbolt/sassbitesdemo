@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function (grunt) {
+  var target = grunt.option('target') || '*';
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -102,7 +103,7 @@ module.exports = function (grunt) {
            viewportSize: [1280, 800],
          },
          src: [
-            './sass/**/*.js'
+            './sass/**/' + target + '-test.js'
          ]
        },
      },
@@ -117,6 +118,17 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-hologram');
+
+
+  grunt.registerTask('test', [
+    'shell:bundler',
+    'shell:bower',
+    'bower_concat',
+    'compass:dev',
+    'hologram',
+    'connect',
+    'phantomcss'
+  ]);
 
   grunt.registerTask('default', [
     'shell:bundler',

@@ -6,3 +6,4 @@ build/
 lib/
 bower_components/
 phantomcss/
+sass/**/*.png

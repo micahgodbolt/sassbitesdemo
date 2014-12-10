@@ -64,6 +64,13 @@ module.exports = function (grunt) {
           target: 'http://localhost:9001/build/styleguide/',
         }
        }
+     },
+     test: {
+       options: {
+        livereload: 1337,
+        port: 9001,
+        base: './',
+       }
      }
     },
 
@@ -126,7 +133,7 @@ module.exports = function (grunt) {
     'bower_concat',
     'compass:dev',
     'hologram',
-    'connect',
+    'connect:test',
     'phantomcss'
   ]);
 
@@ -136,7 +143,7 @@ module.exports = function (grunt) {
     'bower_concat',
     'compass:dev',
     'hologram',
-    'connect',
+    'connect:server',
     'watch'
   ]);
 

@@ -14,4 +14,6 @@ casper.thenOpen('http://localhost:9001/build/styleguide/component_-_popular_vide
     .then(function () {
         this.mouse.move(".popular-video-img-container"); // Trigger :hover state
         phantomcss.screenshot('.popular-video', 'popular-video-desktop-img-hover');
-    });
+    })
+
+;

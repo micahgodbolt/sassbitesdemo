@@ -126,19 +126,43 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-hologram');
 
-
-  grunt.registerTask('testSetup', [
+  grunt.registerTask('default', [
     'shell:bundler',
     'shell:bower',
     'bower_concat',
     'compass:dev',
     'hologram',
-    'connect:test',
+    'connect:server',
+    'watch'
   ]);
 
-  // testClean will wipe out the baseline folder adjacent to the test file you pass in via the param
+
+  grunt.registerTask('test', function(tests, isNew) {
+    if (tests == undefined) {
+      grunt.config.set('phantomcss.sass.src', 'sass/**/*-test.js');
+    }
+    else if (tests == 'new') {
+      grunt.task.run('_testClean:' + '*' );
+      grunt.config.set('phantomcss.sass.src', 'sass/**/*-test.js');
+    }
+    else if (tests == 'clean') {
+      grunt.task.run('_testClean:' + '*' );
+      return;
+    }
+    else {
+      if (isNew == 'new') {
+        grunt.task.run('_testClean:' + tests );
+      };
+      grunt.config.set('phantomcss.sass.src', 'sass/**/' + tests + '-test.js');
+    }
+    grunt.task.run('phantomcss');
+  });
+
+
+
+  // testClean is a private method that will wipe out the baseline folder adjacent to the test file you pass in via the param
   // grunt testClean:featured-item will remove the baseline folder adjacent to featured-item-test.js
-  grunt.registerTask('testClean', function(option) {
+  grunt.registerTask('_testClean', function(option) {
     if (option == undefined) {
       grunt.fail.fatal('A test file must be specified for testClean. You can also pass "*" to remove all baselines ');
     };
@@ -149,37 +173,7 @@ module.exports = function (grunt) {
     })
   });
 
-  grunt.registerTask('test', function(tests, isNew) {
-    if (tests == undefined) {
-      grunt.config.set('phantomcss.sass.src', 'sass/**/*-test.js');
-    }
-    else if (tests == 'new') {
-      grunt.task.run('testClean:' + '*' );
-      grunt.config.set('phantomcss.sass.src', 'sass/**/*-test.js');
-    }
-    else if (tests == 'clean') {
-      grunt.task.run('testClean:' + '*' );
-      return;
-    }
-    else {
-      if (isNew == 'new') {
-        grunt.task.run('testClean:' + tests );
-      };
-      grunt.config.set('phantomcss.sass.src', 'sass/**/' + tests + '-test.js');
-    }
-    grunt.task.run('testSetup');
-    grunt.task.run('phantomcss');
-  });
 
-  grunt.registerTask('default', [
-    'shell:bundler',
-    'shell:bower',
-    'bower_concat',
-    'compass:dev',
-    'hologram',
-    'connect:server',
-    'watch'
-  ]);
 
 };
 

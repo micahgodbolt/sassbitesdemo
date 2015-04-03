@@ -104,7 +104,6 @@ module.exports = function (grunt) {
        },
        sass: {
          options: {
-           altRunner: true,
            screenshots: 'phantomcss/baselines',
            results: 'phantomcss/results',
            viewportSize: [1280, 800],

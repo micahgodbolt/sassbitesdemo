@@ -17,7 +17,7 @@
     "grunt-contrib-compass": "^1.0.1",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-phantomcss": "git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner",
+    "grunt-phantomcss": "git://github.com/micahgodbolt/grunt-phantomcss.git",
     "grunt-hologram": "0.0.4",
     "grunt-shell": "^1.1.1"
   }

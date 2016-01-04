@@ -78,11 +78,11 @@ module.exports = function (grunt) {
     // https://github.com/gruntjs/grunt-contrib-watch
     watch: {
       compass: {
-        files: ['sass/**/*'],
+        files: ['sass/**/*.scss'],
         tasks: ['compass:dev']
       },
       hologram: {
-        files: ['sass/**/*'],
+        files: ['sass/**/*.scss'],
         tasks: ['hologram']
       },
       livereload: {
@@ -104,8 +104,8 @@ module.exports = function (grunt) {
        },
        sass: {
          options: {
-           screenshots: 'phantomcss/baselines',
-           results: 'phantomcss/results',
+           screenshots: 'baselines',
+           results: 'results',
            viewportSize: [1280, 800],
          },
          src: [
@@ -117,7 +117,7 @@ module.exports = function (grunt) {
   });
 
 
-  grunt.loadNpmTasks('grunt-phantomcss');
+  grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
@@ -175,14 +175,3 @@ module.exports = function (grunt) {
 
 
 };
-
-
-
-
-
-
-
-
-
-
-
